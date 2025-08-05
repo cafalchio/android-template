@@ -1,6 +1,6 @@
-# Tauri + React + Typescript
+# Tauri + React + Zustand + Typescript + Tailwind + SQL 
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+This template should help get you started developing with Tauri, React, Zustand, Tailwind, SQL and Typescript.
 
 ## Recommended IDE Setup
 
