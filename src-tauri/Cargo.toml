@@ -32,3 +32,10 @@ opt-level = "z"
 lto = true
 codegen-units = 1
 panic = "abort"
+
+
+[profile.dev]
+opt-level = "z"
+strip = "debuginfo"
+lto = true
+codegen-units = 1

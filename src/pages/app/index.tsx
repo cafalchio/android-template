@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Navbar2 from "@/components/ui/Navbar2";
+import Navbar2 from "@/components/Navbar2";
 import Home from "../home";
 // import Database from '@tauri-apps/plugin-sql';
 
@@ -10,11 +10,14 @@ import Home from "../home";
 function App() {
   return (
     <>
-    <Navbar2 />
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <div className="mt-8 mb-8 pt-safe-top pb-safe-bottom">
+      <Navbar2 />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </div>
     </>
+
   )
 }
 

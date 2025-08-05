@@ -14,7 +14,7 @@ export default function SettingsDrawer() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div>
+    <div className='mb-8'>
       <button
         onClick={() => setOpen(true)}
         className="rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-300"
@@ -40,7 +40,7 @@ export default function SettingsDrawer() {
                 >
                   <DialogPanel className="pointer-events-auto w-5/6 bg-white shadow-xl">
                     {/* Close button */}
-                    <div className="flex justify-end p-4">
+                    <div className="flex justify-end p-4 pt-8">
                       <button onClick={() => setOpen(false)} className="text-gray-500 hover:text-gray-700">
                         <XMarkIcon className="h-6 w-6" />
                       </button>

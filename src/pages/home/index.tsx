@@ -1,8 +1,8 @@
 function Home() {
   return (
-    <div className="flex h-screen flex-col items-center justify-center pt-6 pb-9">
-      <h1 className="text-2xl font-semibold">Home Page</h1>
-    </div>
+    <div className="flex flex-col items-center justify-center overflow-y-auto pt-safe-top pb-safe-bottom">
+    <h1 className="text-2xl font-semibold">Home Page</h1>
+  </div>
   );
 }
 

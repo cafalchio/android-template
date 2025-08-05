@@ -12,13 +12,11 @@ import {
   Cog8ToothIcon,
 } from '@heroicons/react/16/solid'
 import {  HomeIcon } from '@heroicons/react/20/solid'
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
 export default function AppNavbar() {
 const navigate = useNavigate();
-const [open, setOpen] = useState(false)
 
   return (
     <Navbar>

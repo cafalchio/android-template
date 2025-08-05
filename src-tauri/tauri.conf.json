@@ -11,11 +11,15 @@
   },
   "app": {
     "windows": [
-      {
-        "title": "android-template",
-        "width": 520,
-        "height": 1000
-      }
+        {
+          "title": "Template",
+          "width": 800,
+          "height": 600,
+          "resizable": false,
+          "fullscreen": true,
+          "transparent": true,
+          "decorations": false
+        }
     ],
     "security": {
       "csp": null
