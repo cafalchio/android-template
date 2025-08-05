@@ -26,3 +26,9 @@ tauri-plugin-sql = { version = "2", features = ["sqlite"] }
 tauri-plugin-log = "2"
 tauri-plugin-notification = "2"
 
+[profile.release]
+strip = "symbols"
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"

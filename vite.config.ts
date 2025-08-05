@@ -32,5 +32,17 @@ export default defineConfig({
     worker: {
         format: 'es',
         plugins: () => [topLevelAwait()]
-    }
+    },
+    build: {
+        target: process.env.TAURI_PLATFORM === 'windows' ? 'es2021' : 'esnext',
+        minify: !process.env.TAURI_DEBUG ? 'esbuild' : false,
+        sourcemap: !!process.env.TAURI_DEBUG,
+        cssCodeSplit: true,
+        rollupOptions: {
+          output: {
+            format: 'es',
+          },
+        },
+      },
+
 })

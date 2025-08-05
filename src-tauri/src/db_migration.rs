@@ -13,7 +13,7 @@ pub fn create_initial_tables() -> Vec<Migration> {
         Migration {
             version: 2,
             description: "Add first value",
-            sql: "INSERT OR REPLACE INTO users (id, name) VALUES (1, 'Alice')",
+            sql: "INSERT OR REPLACE INTO users (id, name) VALUES (1, 'First Person')",
             kind: MigrationKind::Up,
         },
     ];
