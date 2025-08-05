@@ -13,8 +13,8 @@
     "windows": [
       {
         "title": "android-template",
-        "width": 800,
-        "height": 600
+        "width": 520,
+        "height": 1000
       }
     ],
     "security": {

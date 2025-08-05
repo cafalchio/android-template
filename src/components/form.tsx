@@ -15,7 +15,11 @@ const formSchema = z.object({
   }),
 })
  
-export function ProfileForm() {
+interface Props {
+  setUser: any,
+}
+
+export function ProfileForm({setUser}: Props) {
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -30,6 +34,8 @@ export function ProfileForm() {
     // ✅ This will be type-safe and validated.
     console.log(values)
     db.execute("INSERT INTO users (name) VALUES ($1)", [values.username]);
+    setUser(values.username)
+    form.reset();
   }
 return (
     <Form {...form}>
