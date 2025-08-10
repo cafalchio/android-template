@@ -10,7 +10,7 @@ import Home from "../home";
 function App() {
   return (
     <>
-    <div className="mt-8 mb-8 pt-safe-top pb-safe-bottom">
+    <div className="overflow-hidden box-border absolute h-screen w-screen">
       <Navbar2 />
       <Routes>
         <Route path="/" element={<Home />} />

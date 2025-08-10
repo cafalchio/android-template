@@ -14,14 +14,15 @@ export default function SettingsDrawer() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className='mb-8'>
+    <div className='absolute'>
+      <div className="safe-top ml-2">
       <button
         onClick={() => setOpen(true)}
-        className="rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-300"
+        className=" rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-300"
       >
         Open Settings
       </button>
-
+      </div>
       <Transition show={open} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={setOpen}>
           <DialogBackdrop className="fixed inset-0 bg-black/50" />
@@ -38,7 +39,7 @@ export default function SettingsDrawer() {
                   leaveFrom="translate-x-0"
                   leaveTo="-translate-x-full"
                 >
-                  <DialogPanel className="pointer-events-auto w-5/6 bg-white shadow-xl">
+                  <DialogPanel className="pointer-events-auto w-9/12 bg-blue-100 shadow-xl">
                     {/* Close button */}
                     <div className="flex justify-end p-4 pt-8">
                       <button onClick={() => setOpen(false)} className="text-gray-500 hover:text-gray-700">

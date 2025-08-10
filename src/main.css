@@ -40,6 +40,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 :root {
+
   --radius: 0.625rem;
 
   /* Base Colors */
@@ -144,4 +145,14 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+@utility safe-top {
+  @apply pt-8 ;
+}
+@utility safe-bottom {
+  @apply pb-12;
 }
