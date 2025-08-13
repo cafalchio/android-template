@@ -34,7 +34,7 @@ Verify you have the correct Node.js and NPM versions installed:
 
 3. Clone the Repository and Run the App
 
-git clone https://github.com/cafalchio/FullStackPanic
+git clone [https://github.com/cafalchio/FullStackPanic](https://github.com/cafalchio/android-template)
 cd FullStackPanic
 npm install
 npm run tauri dev
